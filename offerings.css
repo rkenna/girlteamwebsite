@@ -23,13 +23,14 @@
 }
 
 .content {
+  font-size: 1.3em;
   position: absolute;
   top: 28px;
   left: 0;
   background: white;
   right: 0;
-  bottom: 0;
   padding: 20px;
+  padding-bottom: 20%;
   border: 1px solid #ccc; /*Need to change once we have a color palette nailed down*/
 }
 
@@ -41,5 +42,32 @@
 
 [type=radio]:checked ~ label ~ .content {
   z-index: 1;
+}
+
+.pricing-panel {
+	border: 1px solid #689740;
+	margin-top: 20px;
+	border-radius: 15px;
+	width: 55%;
+}
+
+.pricing-heading {
+	position: relative;
+	text-align: center;
+	width: 100%;
+	background-color: #d6e9c6; /*will update this color with the new color palette*/
+	color: #689740;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+}
+
+.pricing-title {
+	padding: 15px;
+}
+
+.panel-content { 
+	width:100%;
+	text-align: center;
+	padding-bottom: 30px;
 }
 
