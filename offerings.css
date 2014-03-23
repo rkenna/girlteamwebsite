@@ -1,0 +1,45 @@
+.tabs {
+	position: relative;
+	min-height: 200px;
+	clear: both;
+	margin: 25px 0;
+}
+
+.tab {
+	float: left;
+}
+
+.tab label {
+	background: #eee; /*will change to match color palette*/
+	padding: 10px;
+	border: 1px solid #ccc;
+	margin-left: -1px;
+	position: relative;
+	left: 1px;
+}
+
+.tab [type=radio] {
+  display: none; /*we don't want the radio buttons to actually show, so this hides them*/  
+}
+
+.content {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background: white;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  border: 1px solid #ccc; /*Need to change once we have a color palette nailed down*/
+}
+
+[type=radio]:checked ~ label {
+  background: white;
+  border-bottom: 1px solid white;
+  z-index: 2; /*This z-index must be bigger than the contents' z-index in order to get the look of a tab*/
+}
+
+[type=radio]:checked ~ label ~ .content {
+  z-index: 1;
+}
+
