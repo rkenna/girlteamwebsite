@@ -1,14 +1,12 @@
 /* COLOR SCHEME
 navbar color-#736F61
 leaf logo color- #736939
-gray color- #736F61
+green color- #707361
 mauve color- #8C7365
 */
 
-/**********************************
-GENERAL
-***********************************/
-body { width: 90%; 
+
+body { width: 90%; margin: auto;
 
 }
 
@@ -38,13 +36,25 @@ h1	{ margin: 0px;
 
 }
 
-#feature-image {background-image: url("flower.jpg"); 
+h2	{margin: auto;
+	text-align: center;
+	height: 100%;
+}
+
+#feature-text { width: 100%;
+
+}
+
+
+
+#feature-image {background-image: url("http://farm9.staticflickr.com/8333/8355560787_26f4ac9a95_o.jpg"); 
 				background-position: 0px 0px;
 				background-repeat: no-repeat;
 				background-size: cover;
 				overflow: visible;
-				margin-right: -15px;
-				margin-left: -15px;
+				margin-right: -5.6%;
+				margin-left: -5.6%;
+				height: 500px;
 }
 
 
@@ -53,6 +63,10 @@ footer	{ padding: 10px 20px;
 }
 
 .social {float: right; margin: 0 10px;
+
+
+
+
 /**********************************
 OFFERINGS
 ***********************************/
