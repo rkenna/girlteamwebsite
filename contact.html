@@ -1,33 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Healing Touch Massage</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/contact.css">
+    <style>
+      #map_canvas {
+        width: 500px;
+        height: 400px;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script>
+      function initialize() {
+        var map_canvas = document.getElementById('map_canvas');
+        var map_options = {
+          center: new google.maps.LatLng(45.533156, -122.689079),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(map_canvas, map_options)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
   </head>
   <body>
-    <header>
-      <!-- this is where the nav panel goes -->
-    </header>
-      <section>
-        <h3>Hours and Location</h3>
-        <p>Open every day 8:00am to 10:00pm</p>
-        <p>We are located at 4321 Relax Way, Portland, Oregon 97216</p>
-      </section>
-       <section>
-        <h3>To Schedule an Appointment:</h3>
-         <ul class="contact-info">
-          <li class="phone"><a href="tel:503-404-5555">(503)404-5555</a></li>
-          <li class="mail"><a href="mailto:nilesvm@gmail.com">nilesvm@gmail.com</a></li>
-          <li class="twitter"><a href="http://twitter.com/intent/tweet?screen_name=nilesvm">@nilesvm</a></li>
-          <li class="facebook"><a href="https://www.facebook.com/nilesvm?fref=ts">
-         </ul>
-      </section>
-      <footer>
-        <!-- This is where the footer goes-->
-        <p>&copy; 2014 girlteam.</p>
-      </footer>
-    </div>
+    <div id="map_canvas"></div>
   </body>
 </html>
