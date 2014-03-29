@@ -70,30 +70,28 @@ footer	{ padding: 10px 20px;
 }
 
 .social {float: right; margin: 0 10px;
-
+}
 
 
 
 /**********************************
 OFFERINGS
 ***********************************/
+
 a:link {
-	color: white; text-decoration:none
+	color: #707361; text-decoration:none
 }
 
-a:visited {
-	color: white; text-decoration:none
-}
-
-a:hover {
-	opacity: 0.6;
+.offerings-container {
+	position: relative;
+	margin-bottom: auto;
+	float: center;
 }
 
 .tabs {
 	position: relative;
 	min-height: 200px;
 	clear: both;
-	margin: 3% 35% 10% 3%;
 }
 
 .tab {
@@ -101,12 +99,15 @@ a:hover {
 }
 
 .tab label {
-	background: #eee; /*will change to match color palette*/
+	background: #C6B2A7; /*will change to match color palette*/
 	padding: 10px;
-	border: 1px solid #ccc;
+	border: 1px solid #5B3621;
 	margin-left: -1px;
 	position: relative;
 	left: 1px;
+	color: #5B3621;
+	border-radius: 15px;
+	font-size: 1.3em;
 }
 
 .tab [type=radio] {
@@ -114,14 +115,17 @@ a:hover {
 }
 
 .content {
-  font-size: 1.3em;
-  position: absolute;
-  top: 28px;
+  font-size: 1.5em;
+  position: absolute; /*this being set at absolute makes it difficult. need to change this, but when i do the tabs don't work anymore*/
+  top: 37px;
   left: 0;
   background: white;
   right: 0;
-  padding: 20px;
-  border: 1px solid #ccc; /*Need to change once we have a color palette nailed down*/
+  padding: 40px;
+  border: 1px solid #5B3621;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+  color: #713444;
 }
 
 [type=radio]:checked ~ label {
@@ -134,48 +138,71 @@ a:hover {
   z-index: 1;
 }
 
-.pricing-panel {
-	border: 1px solid #689740;
-	margin-top: 20px;
-	border-radius: 15px;
-	width: 70%;
-	margin-left: 15%
-}
-
-.pricing-heading {
+.pricing {
 	position: relative;
+	padding-top: 10px;
 	text-align: center;
 	width: 100%;
-	background-color: #d6e9c6; /*will update this color with the new color palette*/
-	color: #689740;
+	color: #736F61;
 	border-top-right-radius: 15px;
 	border-top-left-radius: 15px;
+	font-size: 1em;
+}
+
+hr {
+	border-color: #736F61;
+	width: 50%;
 }
 
 .pricing-title {
 	padding: 15px;
 }
 
-.panel-content { 
+.content { 
 	width:100%;
 	text-align: center;
 	padding-bottom: 30px;
 }
 
-p {
-	background-color: #689740;
-	color: #white;
-	border: 2px solid #d6e9c6;
-	border-radius: 15px;
-	border-radius: 15px;
-	padding: 5px;
-	margin-left: 5%;
-	width: 25%;
-	height: 10%;
-	font-size: 1.3em;
-	position: relative;
-	text-align: center;
+footer {
+	margin-bottom: 0;
+	padding-top: 10%;
+	width: 100%;
 }
+
+
+/**********************************
+LINKS
+***********************************/
+
+.resources {
+	margin-top:10%;
+}
+
+.resources h1 {
+	color: #DCD8CE;
+	border-color: #736F61;
+	background-color: #736F61;
+	width: 100%;
+	padding: 5px;
+}
+
+li {
+	list-style-type: none;
+	font-size: 1.5em;
+}	
+
+.resources a {
+	color: #8C7365;
+}
+
+.resources a:hover,
+.resources a:focus {
+  	text-decoration: underline;
+}
+
+
+
 
 
 
