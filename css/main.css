@@ -172,21 +172,10 @@ LINKS
 	margin-top:10%;
 }
 
-.resources h1 {
-	color: #DCD8CE;
-	border-color: #736F61;
-	background-color: #736F61;
-	width: 100%;
+.resources h2 {
+	color: #736F61;
 	padding: 5px;
-}
-
-li {
-	list-style-type: none;
-	font-size: 1.5em;
-}	
-
-.resources a {
-	color: #8C7365;
+	float: left;
 }
 
 .resources a:hover,
