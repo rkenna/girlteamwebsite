@@ -173,6 +173,78 @@ footer {
 }
 
 /**********************************
+OFFERINGS MEDIA QUERIES
+***********************************/
+
+@media screen and (max-width: 1200px) {
+body {
+    width:1000px;
+    margin:0 auto;
+    }
+.offerings-container {
+    width: 700px;
+    }
+.sidebar{
+    width:280px;
+    }
+}
+ 
+@media screen and (max-width: 980px) {
+body {
+    width:850px;
+    margin:0 auto;
+    }
+.offerings-container {
+    width: 550px;
+    }
+.sidebar{
+    width:280px;
+    }
+}
+ 
+@media screen and (max-width: 750px) {
+body {
+    width:600px;
+    margin:0 auto;
+    }
+.offerings-container {
+    width: 400px;
+    }
+.sidebar{
+    width:190px;
+    margin: 0 0 20px 10px;
+    }
+}
+ 
+@media screen and (max-width: 540px) {
+body {
+    width:450px;
+    margin:0 auto;
+    }
+.offerings-container {
+    width: 450px;
+    }
+.sidebar{
+    width:450px;
+    margin: 0 0 10px 0;
+    }
+}
+ 
+@media screen and (max-width: 380px) {
+body {
+	width:360px;
+    margin:0 auto;
+	}
+.offerings-container {
+    width: 360px;
+    }
+.sidebar{
+    width:360px;
+    margin: 0 0 10px 0;
+    }
+}
+
+/**********************************
 LINKS
 ***********************************/
 
