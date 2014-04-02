@@ -5,12 +5,14 @@ green color- #707361
 mauve color- #8C7365
 */
 
-
-body { width: 90%; margin: auto;
+body {background-color: #F7F7F7;
+	width: 90%; 
+	margin: auto;
 
 }
 
-.container {padding: 10px 20px;
+.container {
+	padding: 10px 20px;
 
 }
 
@@ -32,7 +34,7 @@ a { color: #736F61;
 a:hover,
 a:focus {
   color: #736F61;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 h1	{ margin: 0px;
@@ -202,7 +204,15 @@ li {
 }
 
 
+/**********************************
+OFFERINGS
+***********************************/
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active, 
+open .dropdown-toggle.btn-primary{ background-color: black;
 
 
-
-
+}
