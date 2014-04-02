@@ -5,12 +5,14 @@ green color- #707361
 mauve color- #8C7365
 */
 
-
-body { width: 90%; margin: auto;
+body {background-color: #F7F7F7;
+	width: 90%; 
+	margin: auto;
 
 }
 
-.container {padding: 10px 20px;
+.container {
+	padding: 10px 20px;
 
 }
 
@@ -19,9 +21,12 @@ body { width: 90%; margin: auto;
 }
 
 
-.navbar-header {font-size: 1.5em; float: right;
+.navbar-header {padding-top: 40px;
+				font-size: 1.5em; 
+				float: right;
 
 }
+
 a { color: #736F61;
 
 }
@@ -29,14 +34,18 @@ a { color: #736F61;
 a:hover,
 a:focus {
   color: #736F61;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 h1	{ margin: 0px;
 
 }
 
-h2	{margin: auto;
+h2	{font-size: 70px;
+	padding-top: 225px;
+	color: #fff;
+	text-shadow: 0 0 15px #000;
+	margin: auto;
 	text-align: center;
 	height: 100%;
 }
@@ -47,14 +56,14 @@ h2	{margin: auto;
 
 
 
-#feature-image {background-image: url("http://farm9.staticflickr.com/8333/8355560787_26f4ac9a95_o.jpg"); 
+#feature-image {background-image: url("https://farm2.staticflickr.com/1125/754753208_d8ccab327d_o.jpg"); 
 				background-position: 0px 0px;
 				background-repeat: no-repeat;
 				background-size: cover;
 				overflow: visible;
-				margin-right: -5.6%;
-				margin-left: -5.6%;
-				height: 500px;
+				margin-right: -5.55%;
+				margin-left: -5.55%;
+				height: 540px;
 }
 
 
@@ -63,30 +72,28 @@ footer	{ padding: 10px 20px;
 }
 
 .social {float: right; margin: 0 10px;
-
+}
 
 
 
 /**********************************
 OFFERINGS
 ***********************************/
+
 a:link {
-	color: white; text-decoration:none
+	color: #707361; text-decoration:none
 }
 
-a:visited {
-	color: white; text-decoration:none
-}
-
-a:hover {
-	opacity: 0.6;
+.offerings-container {
+	position: relative;
+	margin-bottom: auto;
+	float: center;
 }
 
 .tabs {
 	position: relative;
 	min-height: 200px;
 	clear: both;
-	margin: 3% 35% 10% 3%;
 }
 
 .tab {
@@ -94,12 +101,15 @@ a:hover {
 }
 
 .tab label {
-	background: #eee; /*will change to match color palette*/
+	background: #C6B2A7; /*will change to match color palette*/
 	padding: 10px;
-	border: 1px solid #ccc;
+	border: 1px solid #5B3621;
 	margin-left: -1px;
 	position: relative;
 	left: 1px;
+	color: #5B3621;
+	border-radius: 15px;
+	font-size: 1.3em;
 }
 
 .tab [type=radio] {
@@ -107,14 +117,17 @@ a:hover {
 }
 
 .content {
-  font-size: 1.3em;
-  position: absolute;
-  top: 28px;
+  font-size: 1.5em;
+  position: absolute; /*this being set at absolute makes it difficult. need to change this, but when i do the tabs don't work anymore*/
+  top: 37px;
   left: 0;
   background: white;
   right: 0;
-  padding: 20px;
-  border: 1px solid #ccc; /*Need to change once we have a color palette nailed down*/
+  padding: 40px;
+  border: 1px solid #5B3621;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+  color: #713444;
 }
 
 [type=radio]:checked ~ label {
@@ -127,48 +140,79 @@ a:hover {
   z-index: 1;
 }
 
-.pricing-panel {
-	border: 1px solid #689740;
-	margin-top: 20px;
-	border-radius: 15px;
-	width: 70%;
-	margin-left: 15%
-}
-
-.pricing-heading {
+.pricing {
 	position: relative;
+	padding-top: 10px;
 	text-align: center;
 	width: 100%;
-	background-color: #d6e9c6; /*will update this color with the new color palette*/
-	color: #689740;
+	color: #736F61;
 	border-top-right-radius: 15px;
 	border-top-left-radius: 15px;
+	font-size: 1em;
+}
+
+hr {
+	border-color: #736F61;
+	width: 50%;
 }
 
 .pricing-title {
 	padding: 15px;
 }
 
-.panel-content { 
+.content { 
 	width:100%;
 	text-align: center;
 	padding-bottom: 30px;
 }
 
-p {
-	background-color: #689740;
-	color: #white;
-	border: 2px solid #d6e9c6;
-	border-radius: 15px;
-	border-radius: 15px;
-	padding: 5px;
-	margin-left: 5%;
-	width: 25%;
-	height: 10%;
-	font-size: 1.3em;
-	position: relative;
-	text-align: center;
+footer {
+	margin-bottom: 0;
+	padding-top: 10%;
+	width: 100%;
 }
 
 
+/**********************************
+LINKS
+***********************************/
 
+.resources {
+	margin-top:10%;
+}
+
+.resources h1 {
+	color: #DCD8CE;
+	border-color: #736F61;
+	background-color: #736F61;
+	width: 100%;
+	padding: 5px;
+}
+
+li {
+	list-style-type: none;
+	font-size: 1.5em;
+}	
+
+.resources a {
+	color: #8C7365;
+}
+
+.resources a:hover,
+.resources a:focus {
+  	text-decoration: underline;
+}
+
+
+/**********************************
+OFFERINGS
+***********************************/
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active, 
+open .dropdown-toggle.btn-primary{ background-color: black;
+
+
+}
