@@ -13,7 +13,6 @@ body {background-color: #F7F7F7;
 
 .container {
 	padding: 10px 20px;
-
 }
 
 .logo { float: left;
@@ -22,7 +21,7 @@ body {background-color: #F7F7F7;
 
 
 .navbar-header {padding-top: 40px;
-				font-size: 1.5em; 
+				font-size: 1.1em; 
 				float: right;
 
 }
@@ -85,6 +84,7 @@ a:link {
 }
 
 .offerings-container {
+	padding-top: 1%;
 	position: relative;
 	margin-bottom: auto;
 	float: center;
@@ -92,7 +92,7 @@ a:link {
 
 .tabs {
 	position: relative;
-	min-height: 200px;
+	min-height: 390px;
 	clear: both;
 }
 
@@ -101,15 +101,15 @@ a:link {
 }
 
 .tab label {
-	background: #C6B2A7; /*will change to match color palette*/
-	padding: 10px;
-	border: 1px solid #5B3621;
+	background: #E8E8E8; /*will change to match color palette*/
+	padding: 5px;
+	border: 0px solid #5B3621;
 	margin-left: -1px;
 	position: relative;
 	left: 1px;
-	color: #5B3621;
+	color: #736F61;
 	border-radius: 15px;
-	font-size: 1.3em;
+	font-size: 1.1em;
 }
 
 .tab [type=radio] {
@@ -117,17 +117,17 @@ a:link {
 }
 
 .content {
-  font-size: 1.5em;
+  font-size: 1.1em;
   position: absolute; /*this being set at absolute makes it difficult. need to change this, but when i do the tabs don't work anymore*/
   top: 37px;
   left: 0;
   background: white;
   right: 0;
-  padding: 40px;
-  border: 1px solid #5B3621;
+  padding: 20px;
+  border: 0px solid #5B3621;
   border-radius: 15px;
   border-top-left-radius: 0px;
-  color: #713444;
+  color: black;
 }
 
 [type=radio]:checked ~ label {
@@ -168,7 +168,7 @@ hr {
 
 footer {
 	margin-bottom: 0;
-	padding-top: 10%;
+	padding-top: 1%; /*** Sara this is what was making the extra space on the homepage (i dropped it down to 1% padding); i think the sidebar will fix it on the offerings pg **/
 	width: 100%;
 }
 
@@ -192,7 +192,7 @@ LINKS
 li {
 	list-style-type: none;
 	font-size: 1.5em;
-}	
+}	/* call this something else will effect navbar links *//
 
 .resources a {
 	color: #8C7365;
@@ -205,14 +205,32 @@ li {
 
 
 /**********************************
-OFFERINGS
+SIDEBAR
 ***********************************/
+
+.thumbnail { padding: 2%;
+	border: 0px;
+}
+
+.panel {border: 0px;
+
+}
+
+.col-lg-9 { width: 70%;
+}
+
+.col-lg-3 { width: 30%;
+}
 
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active, 
-open .dropdown-toggle.btn-primary{ background-color: black;
+.dropdown-toggle.btn-primary{ 
+								background-color: #736939;
+								border-color: #736939;
+}
 
-
+h4 { padding: 1%;
+	padding-left: 3%;
 }
