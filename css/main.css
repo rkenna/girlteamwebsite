@@ -101,7 +101,7 @@ a:link {
 }
 
 .tab label {
-	background: #E8E8E8; /*will change to match color palette*/
+	background: #E8E8E8;
 	padding: 5px;
 	border: 0px solid #5B3621;
 	margin-left: -1px;
@@ -172,30 +172,96 @@ footer {
 	width: 100%;
 }
 
+/**********************************
+OFFERINGS MEDIA QUERIES
+***********************************/
+
+@media screen and (max-width: 1200px) {
+body {
+    width:1000px;
+    margin:0 auto;
+    }
+.offerings-container {
+    width: 700px;
+    }
+.sidebar{
+    width:280px;
+    }
+}
+ 
+@media screen and (max-width: 980px) {
+body {
+    width:850px;
+    margin:0 auto;
+    }
+.offerings-container {
+    width: 550px;
+    }
+.sidebar{
+    width:280px;
+    }
+}
+ 
+@media screen and (max-width: 750px) {
+body {
+    width:600px;
+    margin:0 auto;
+    }
+.offerings-container {
+    width: 400px;
+    }
+.sidebar{
+    width:190px;
+    margin: 0 0 20px 10px;
+    }
+}
+ 
+@media screen and (max-width: 540px) {
+body {
+    width:450px;
+    margin:0 auto;
+    }
+.offerings-container {
+    width: 450px;
+    }
+.sidebar{
+    width:450px;
+    margin: 0 0 10px 0;
+    }
+}
+ 
+@media screen and (max-width: 380px) {
+body {
+	width:360px;
+    margin:0 auto;
+	}
+.offerings-container {
+    width: 360px;
+    }
+.sidebar{
+    width:360px;
+    margin: 0 0 10px 0;
+    }
+}
 
 /**********************************
 LINKS
 ***********************************/
 
+.intake-form {
+	margin-top: 5%;
+	float: left;
+	font-size: 1.3em;
+}
+
 .resources {
-	margin-top:10%;
+	margin-top:5%;
+	float: center;
 }
 
-.resources h1 {
-	color: #DCD8CE;
-	border-color: #736F61;
-	background-color: #736F61;
-	width: 100%;
+.resources li {
+	color: #736F61;
 	padding: 5px;
-}
-
-li {
-	list-style-type: none;
-	font-size: 1.5em;
-}	/* call this something else will effect navbar links *//
-
-.resources a {
-	color: #8C7365;
 }
 
 .resources a:hover,
@@ -203,6 +269,12 @@ li {
   	text-decoration: underline;
 }
 
+
+footer .container {
+	margin-bottom: 0;
+	padding-top: 10%;
+	width: 100%;
+}
 
 /**********************************
 SIDEBAR
