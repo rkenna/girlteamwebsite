@@ -122,6 +122,26 @@ footer .container {
 }
 
 /**********************************
+CONTACT
+***********************************/
+
+.contact-info {
+	text-align: center;
+}
+
+.phone {
+	font-size: 2.0em;
+}
+
+.contact-info a:hover {
+	color: #4B4113;
+}
+
+.iframe {
+	text-align: center;
+}
+
+/**********************************
 SIDEBAR
 ***********************************/
 
