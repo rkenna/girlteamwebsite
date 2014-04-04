@@ -68,7 +68,7 @@ h2	{font-size: 70px;
 				overflow: visible;
 				margin-right: -5.55%;
 				margin-left: -5.55%;
-				height: 540px;
+				min-height: 540px;
 }
 
 
@@ -134,7 +134,7 @@ CONTACT
 }
 
 .contact-info a:hover {
-	color: #4B4113;
+	color:black;
 }
 
 .iframe {
