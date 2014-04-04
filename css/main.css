@@ -30,10 +30,16 @@ a { color: #736F61;
 
 }
 
-a:hover,
-a:focus {
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  background-color: #d6d6d6;
   color: #736F61;
-  text-decoration: none;
+}
+
+a:hover,
+a:focus {color: #736F61;
+  		text-decoration: none;
 }
 
 h1	{ margin: 0px;
