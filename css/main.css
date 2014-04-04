@@ -77,17 +77,12 @@ footer	{ padding: 10px 20px;
 OFFERINGS
 ***********************************/
 
-.massages {
-	float: left;
-}
-
 .massages h3 {
 	color: #8C7365;
 }
 
-footer {
-	margin-bottom: 0;
-	width: 100%;
+.massages p {
+	font-size: 1.3em;
 }
 
 /**********************************
