@@ -5,10 +5,9 @@ green color- #707361
 mauve color- #8C7365
 */
 
-body {background-color: #F7F7F7;
-	width: 90%; 
-	margin: auto;
-
+body {
+  		background-image: url(http://subtlepatterns.com/patterns/gray_jean.png);
+  		background-repeat:repeat;
 }
 
 .container {
@@ -35,6 +34,10 @@ a { color: #736F61;
 .nav-pills > li.active > a:focus {
   background-color: #d6d6d6;
   color: #736F61;
+}
+
+.nav-pills> li > a:hover{
+	background-color: transparent;
 }
 
 a:hover,
@@ -68,7 +71,7 @@ h2	{font-size: 70px;
 				overflow: visible;
 				margin-right: -5.55%;
 				margin-left: -5.55%;
-				height: 540px;
+				min-height: 540px;
 }
 
 
@@ -134,7 +137,7 @@ CONTACT
 }
 
 .contact-info a:hover {
-	color: #4B4113;
+	color:black;
 }
 
 .iframe {
