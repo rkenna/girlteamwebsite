@@ -5,10 +5,9 @@ green color- #707361
 mauve color- #8C7365
 */
 
-body {background-color: #F7F7F7;
-	width: 90%; 
-	margin: auto;
-
+body {
+  		background-image: url(http://subtlepatterns.com/patterns/gray_jean.png);
+  		background-repeat:repeat;
 }
 
 .container {
@@ -35,6 +34,10 @@ a { color: #736F61;
 .nav-pills > li.active > a:focus {
   background-color: #d6d6d6;
   color: #736F61;
+}
+
+.nav-pills> li > a:hover{
+	background-color: transparent;
 }
 
 a:hover,
@@ -68,7 +71,7 @@ h2	{font-size: 70px;
 				overflow: visible;
 				margin-right: -5.55%;
 				margin-left: -5.55%;
-				height: 540px;
+				min-height: 540px;
 }
 
 
@@ -97,7 +100,6 @@ LINKS
 
 .intake-form {
 	float: left;
-	font-size: 1.3em;
 }
 
 .resources {
@@ -105,8 +107,25 @@ LINKS
 	float: center;
 }
 
+.resources a {
+	color: black;
+
+}
+
+.resources h3 {
+	color: #8C7365;
+}
+
+.resources p {
+	font-size: 1.3em;
+}
+
+.intake-form hr {width: 131%;
+
+}
+
 .resource-links li {
-	color: #736F61;
+	color: transparent;
 	padding: 5px;
 }
 
@@ -115,10 +134,28 @@ LINKS
   	text-decoration: underline;
 }
 
-footer .container {
-	margin-bottom: 0;
-	padding-top: 1%;
-	width: 100%;
+
+/**********************************
+CONTACT
+***********************************/
+.contact-info a { color: black;
+
+}
+
+.contact-info {
+	text-align: center;
+}
+
+.phone {
+	font-size: 2.0em;
+}
+
+.contact-info a:hover {
+	color:black;
+}
+
+.iframe {
+	text-align: center;
 }
 
 /**********************************
