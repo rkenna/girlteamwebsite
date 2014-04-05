@@ -143,6 +143,7 @@ CONTACT
 }
 
 .contact-info {
+	color: #8C7365;
 	text-align: center;
 }
 
@@ -156,6 +157,13 @@ CONTACT
 
 .iframe {
 	text-align: center;
+}
+/*************************************
+FEEDBACK***************************/
+
+.feedback h3 {  padding-left: 1%;
+				color: #8C7365;
+
 }
 
 /**********************************
