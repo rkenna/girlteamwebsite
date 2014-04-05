@@ -100,7 +100,6 @@ LINKS
 
 .intake-form {
 	float: left;
-	font-size: 1.3em;
 }
 
 .resources {
@@ -108,8 +107,25 @@ LINKS
 	float: center;
 }
 
+.resources a {
+	color: black;
+
+}
+
+.resources h3 {
+	color: #8C7365;
+}
+
+.resources p {
+	font-size: 1.3em;
+}
+
+.intake-form hr {width: 131%;
+
+}
+
 .resource-links li {
-	color: #736F61;
+	color: transparent;
 	padding: 5px;
 }
 
@@ -127,6 +143,9 @@ footer .container {
 /**********************************
 CONTACT
 ***********************************/
+.contact-info a { color: black;
+
+}
 
 .contact-info {
 	text-align: center;
